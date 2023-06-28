@@ -17,7 +17,7 @@ const EnrutadorDeApp = () => {
   return (
     <BrowserRouter>
         <NavBar />
-      <Routes>
+        <Routes>
         <Route path="/vision" element={<Inicio />} exact={true} />
         <Route path="/lentesSol" element={<LentesSol />} />
         <Route path="/rayband" element={<Rayband />} />
