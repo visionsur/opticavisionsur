@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, BrowserRouter, Routes, Router } from 'react-router-dom';
+import LentesSol from './lentesSol/variedad';
+import Rayband from './lentesSol/rayband';
+import NavBar from './navbar/navbar.js';
+import Graduacion from './lentesAumento/graduacion';
+import Inicio from './inicio/inicio'
+import Nosotros from './accesorios/accesorios';
+import Ozono from './lentesSol/ozono';
+import Mohs from './lentesSol/mohs';
+import ruta66 from './lentesSol/ruta66';
+import errorSitio from './promociones/404/ErrorSitio';
 
-function App() {
+
+
+const EnrutadorDeApp = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <NavBar />
+      <Routes>
+        <Route path="/vision" element={<Inicio />} exact={true} />
+        <Route path="/lentesSol" element={<LentesSol />} />
+        <Route path="/rayband" element={<Rayband />} />
+        <Route path="/graduacion" element={<Graduacion />} />
+        {/* <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/ozono" element={<Ozono />} />
+        <Route path="/mohs" element={<Mohs />} />
+        <Route path="/ruta66" element={<DesayunoMerienda />} />
+        <Route path='*' element={<errorSitio />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
-export default App;
+export default EnrutadorDeApp;
