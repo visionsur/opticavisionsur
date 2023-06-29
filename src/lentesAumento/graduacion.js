@@ -2,8 +2,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import kodak from '../imagenes/TIPO_DE_LENTES/marco_kodak.png';
 import lentes_contacto from '../imagenes/TIPO_DE_LENTES/LENTES_DE_CONTACTO.png';
-import ruta66 from '../imagenes/TIPO_DE_LENTES/ruta66.png'
-import mohs from '../imagenes/TIPO_DE_LENTES/mohs.jpg'
 import { CardGroup } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import { useNavigate } from 'react-router-dom';
