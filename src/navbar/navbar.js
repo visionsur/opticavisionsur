@@ -10,7 +10,7 @@ function NavBar() {
     <Navbar expand="lg">
       <Container>
         <Navbar.Brand >
-          <NavLink to="/opticavisionsur">
+          <NavLink to="/">
             <img class="icono" src={icono} />
           </NavLink>
         </Navbar.Brand>

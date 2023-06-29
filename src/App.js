@@ -14,7 +14,7 @@ const EnrutadorDeApp = () => {
     <BrowserRouter>
         <NavBar />
         <Routes>
-        <Route path="/opticavisionsur" element={<Inicio />} exact={true} />
+        <Route path="/" element={<Inicio />} exact={true} />
         <Route path="/lentesSol" element={<LentesSol />} />
         <Route path="/rayband" element={<Rayband />} />
         <Route path="/graduacion" element={<Graduacion />} />
